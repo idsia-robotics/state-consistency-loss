@@ -1,2 +1,41 @@
-# state-consistency-loss
-State-Consistency Loss for Learning Spatial Perception Tasks from Partial Labels
+# State-Consistency Loss for Learning Spatial Perception Tasks from Partial Labels
+
+*Mirko Nava, Luca Maria Gambardella, and Alessandro Giusti*
+
+Dalle Molle Institute for Artificial Intelligence, USI-SUPSI, Lugano (Switzerland)
+
+### Abstract
+
+When learning models for real-world robot spatial perception tasks, one might have access only to partial labels: this occurs for example in semi-supervised scenarios (in which labels are not available for a subset of the training instances) or in some types of self-supervised robot learning (where the robot autonomously acquires a labeled training set, but only acquires labels for a subset of the output variables in each instance).  We introduce a general approach to deal with this class of problems using an auxiliary loss enforcing the expectation that the perceived environment state should not abruptly change; then, we instantiate the approach to solve two robot perception problems: a simulated ground robot learning long-range obstacle mapping as a 400-binary-label classification task in a self-supervised way in a static environment; and a real nano-quadrotor learning human pose estimation as a 3-variable regression task in a semi-supervised way in a dynamic environment.  In both cases, our approach yields significant quantitative performance improvements (average increase of 6 AUC percentage points in the former; relative improvement of the R2 metric ranging from 7% to 33% in the latter) over baselines.
+
+![Predictions](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
+*Prediction of a model trained with the proposed approach applied on a camera mounted on a Mighty Thymio **(a)**, on a TurtleBot **(b)** and on the belt of a person **(c)**.*
+
+![Predictions](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/img/simulation_results.png "Predictions")
+*Simulation setup and results of the proposed approach applied on 3 cameras mounted on a Pioneer 3AT with different rotations.
+**Left & Center-left**: robot setup with cameras' views.
+**Center-right**: number of extracted known labels from 70min of recording.
+**Right**: achieved AUC score of a model trained from 35min of recording.*
+
+The preprint PDF of the article is available [here](https://arxiv.org/abs/1809.07207).
+
+### Bibtex
+
+```properties
+TODO
+```
+
+### Videos
+
+[![Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/video/self_supervised_aaai2019.gif)](https://www.youtube.com/watch?v=JvtDGO43qew)
+
+All the video material of models trained with the proposed approach on different scenarios, robots and systems is available [here](https://github.com/idsia-robotics/Learning-Long-range-Perception/tree/master/video).
+
+### Code
+
+The entire codebase is avaliable [here](https://github.com/idsia-robotics/state-consistency-loss/tree/master/code).
+In order to generate the datasets one should launch the script preprocess.py which will create the dataset in hdf5 file format, starting from a collection of ROS bagfiles stored in a given folder.
+
+The script train.py is used to train the model, which is defined in model.py, using a given hdf5 dataset. A list of the available parameters can be seen by launching  `python train.py -h `.
+
+The script test.py is used to test the model using a subset of the hdf5 groups defined in the script. A list of the available parameters can be seen by launching  `python test.py -h `.
