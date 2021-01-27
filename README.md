@@ -25,7 +25,7 @@ TODO
 
 ### Videos
 
-[![Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry](https://github.com/idsia-robotics/state-consistency-loss/blob/main/video/self_supervised_aaai2019.gif)](https://youtu.be/AD69cYFinzc)
+[![Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry](https://github.com/idsia-robotics/state-consistency-loss/blob/main/video/video.gif)](https://youtu.be/AD69cYFinzc)
 
 All the video material of models trained with the proposed approach on different scenarios, robots and systems is available [here](https://github.com/idsia-robotics/state-consistency-loss/tree/main/video).
 
