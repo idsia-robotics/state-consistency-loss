@@ -9,13 +9,13 @@ Dalle Molle Institute for Artificial Intelligence, USI-SUPSI, Lugano (Switzerlan
 When learning models for real-world robot spatial perception tasks, one might have access only to partial labels: this occurs for example in semi-supervised scenarios (in which labels are not available for a subset of the training instances) or in some types of self-supervised robot learning (where the robot autonomously acquires a labeled training set, but only acquires labels for a subset of the output variables in each instance).  We introduce a general approach to deal with this class of problems using an auxiliary loss enforcing the expectation that the perceived environment state should not abruptly change; then, we instantiate the approach to solve two robot perception problems: a simulated ground robot learning long-range obstacle mapping as a 400-binary-label classification task in a self-supervised way in a static environment; and a real nano-quadrotor learning human pose estimation as a 3-variable regression task in a semi-supervised way in a dynamic environment.  In both cases, our approach yields significant quantitative performance improvements (average increase of 6 AUC percentage points in the former; relative improvement of the R2 metric ranging from 7% to 33% in the latter) over baselines.
 
 ![Predictions](https://github.com/idsia-robotics/state-consistency-loss/blob/main/img/occupancy_map.png "Predictions")
-*Self-supervised occupancy map estimation: on six testing instances. Left: input before down-scaling.  Center: self-supervised labels (not used for prediction).  Right: model prediction and FOV (blue). Red represents occupied cells, green for empty cells, and gray for missing information.*
+*Self-supervised occupancy map estimation: on six testing instances. **Left**: input before down-scaling.  **Center**: self-supervised labels (not used for prediction).  **Right**: model prediction and FOV (blue). Red represents occupied cells, green for empty cells, and gray for missing information.*
 
 ![Predictions](https://github.com/idsia-robotics/state-consistency-loss/blob/main/img/user_pose.png "Predictions")
 *Semi-supervised estimation of user pose in a nano-drone: user's head location (x, y, z) and heading (phi) predictions.
 Compared to the model trained using only the task loss (blue), our approach (red) is usually closer to the ground-truth (green).*
 
-The preprint PDF of the article is available [here](https://arxiv.org/abs/1809.07207).
+The preprint PDF of the article is available [here](https://arxiv.org/abs/todo).
 
 ### Bibtex
 
