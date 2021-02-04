@@ -20,7 +20,16 @@ The preprint PDF of the article is available [here](https://ieeexplore.ieee.org/
 ### Bibtex
 
 ```properties
-TODO
+@article{nava2021earlyaccess,
+  author={M. {Nava} and L. {Gambardella} and A. {Giusti}},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={State-Consistency Loss for Learning Spatial Perception Tasks from Partial Labels}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/LRA.2021.3056378},
+}
 ```
 
 ### Videos
