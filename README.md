@@ -15,7 +15,7 @@ When learning models for real-world robot spatial perception tasks, one might ha
 *Semi-supervised estimation of user pose in a nano-drone: user's head location (x, y, z) and heading (phi) predictions.
 Compared to the model trained using only the task loss (blue), our approach (red) is usually closer to the ground-truth (green).*
 
-The preprint PDF of the article is available [here](https://arxiv.org/abs/todo).
+The preprint PDF of the article is available [here](https://ieeexplore.ieee.org/document/9345348).
 
 ### Bibtex
 
