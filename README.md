@@ -15,20 +15,20 @@ When learning models for real-world robot spatial perception tasks, one might ha
 *Semi-supervised estimation of user pose in a nano-drone: user's head location (x, y, z) and heading (phi) predictions.
 Compared to the model trained using only the task loss (blue), our approach (red) is usually closer to the ground-truth (green).*
 
-The preprint PDF of the article is available [here](https://ieeexplore.ieee.org/document/9345348).
+The PDF of the article is available in Open Access [here](https://doi.org/10.1109/LRA.2021.3056378).
 
 ### Bibtex
 
 ```properties
-@article{nava2021earlyaccess,
-  author={M. {Nava} and L. {Gambardella} and A. {Giusti}},
+@article{nava2021ral,
+  author={M. {Nava} and L. M. {Gambardella} and A. {Giusti}},
   journal={IEEE Robotics and Automation Letters}, 
-  title={State-Consistency Loss for Learning Spatial Perception Tasks from Partial Labels}, 
+  title={State-Consistency Loss for Learning Spatial Perception Tasks From Partial Labels}, 
   year={2021},
-  volume={},
-  number={},
-  pages={},
-  doi={10.1109/LRA.2021.3056378},
+  volume={6},
+  number={2},
+  pages={1112-1119},
+  doi={10.1109/LRA.2021.3056378}
 }
 ```
 
